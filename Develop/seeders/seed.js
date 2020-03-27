@@ -5,7 +5,7 @@ mongoose.connect("mongodb://localhost/workout", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
-
+// loop thru add each workout one at a time 
 let workoutSeed = [
   {
     day: new Date().setDate(new Date().getDate()-10),
@@ -145,3 +145,6 @@ db.Workout.deleteMany({})
     console.error(err);
     process.exit(1);
   });
+
+
+  
