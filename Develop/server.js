@@ -23,7 +23,6 @@ app.use(express.json());
   useFindAndModify: false
 });
 
-
  app.get("/api/workouts", (req, res) => {
   db.Workout.find({}, (err, found) => {
     if (err) {
@@ -84,7 +83,3 @@ app.listen(PORT, () => {
   });
   
 
-// app.get('/api/workouts', function (req, res) {
-//   mongoose.Workout
-//   res.send(res.params)
-// })

@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const WorkoutSchema = new Schema({
+
   day: {
     type: Date,
     default: () => new Date()
@@ -13,16 +14,17 @@ const WorkoutSchema = new Schema({
       type: String,
       trim: true
     },
+
     name: {
       type: String,
       trim: true,
       required: 'exercise must have a name'
     },
+
     duration: {
-      type: Number,
-      min: 1,
-      max: 200,
+      type: Number
     },
+
     weight: {
       type: Number
     },
@@ -31,17 +33,14 @@ const WorkoutSchema = new Schema({
     },
     sets: {
       type: Number
-    }
-  }]
-  // difficulty: {
-  //   type: String,
-  //   trim: true,
-  //   default: "easy",
-  // },
-  // description: {
-  //   type: String,
-  //   trim: true,
-  // }
+    },
+    distance:{
+      type: Number
+    },
+    
+  }],
+  
+
   });
 
 const Workout = mongoose.model("Workout", WorkoutSchema);
