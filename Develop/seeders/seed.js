@@ -17,7 +17,7 @@ let workoutSeed = [
         weight: 100,
         reps: 10,
         sets: 4
-      }
+      },
     ]
   },
   {
