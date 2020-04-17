@@ -8,6 +8,5 @@
 
 - screen shot:
 
-![Alt text](./public/img/fit.png"Optional Title")
-
+![](fitapp.gif)
 
