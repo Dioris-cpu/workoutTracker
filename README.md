@@ -6,7 +6,6 @@
 
 - Deployed link: https://powerful-chamber-99474.herokuapp.com/?id=5e800711814b22002443d037
 
-- screen shot:
 
 ![](fitapp.gif)
 
